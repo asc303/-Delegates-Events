@@ -11,21 +11,21 @@ namespace Delegates_and_Events
         public static void ImplementEvent()
         {
             add += new DelEventHandler(India);
-            add += new DelEventHandler(USA);
-            add += new DelEventHandler(England);
+            add += new DelEventHandler(Canada);
+            add += new DelEventHandler(Dubai);
             add.Invoke();
         }
         private static void India()
         {
             Console.WriteLine("India");
         }
-        private static void USA()
+        private static void Canada()
         {
-            Console.WriteLine("USA");
+            Console.WriteLine("Canada");
         }
-        private static void England()
+        private static void Dubai()
         {
-            Console.WriteLine("England");
+            Console.WriteLine("Dubai");
         }
     }
 }

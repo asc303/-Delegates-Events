@@ -6,17 +6,17 @@ namespace Delegates_and_Events
 {
     class MulticastDelegate
     {
-        delegate void DelOp(int x, int y); // Creation of Delegation Operation
+        delegate void DelOp(int x, int y); // Creating  of Delegation Operation
         public static void ImplementDelegate()
         {
             DelOp obj = Operation.Add;
             obj += Operation.Square;
 
-            obj(5, 5);
-            obj(8, 3);
+            obj(6, 6);
+            obj(8, 5);
             Console.ReadLine();
         }
-        public class Operation // Creation of Operation Class
+        public class Operation // Creating of Operation Class
         {
             public static void Add(int a, int b)
             {
